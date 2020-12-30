@@ -1,0 +1,5 @@
+Uwaga: na razie tylko BST i RBT (bez hmap, plik hmap.py jest pusty)
+Dodatkowo mo¿na do pliku inputowego dopisaæ polecenie print, które ³adnie printuje drzewo.
+Proszê uruchamiaæ zawsze przez komendy z pliku input sformatowanego jak w poleceniu (1 linia = 1 komenda).
+
+python zad1.py --type bst|rbt < input > out.txt

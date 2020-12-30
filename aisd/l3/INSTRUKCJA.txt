@@ -1,0 +1,42 @@
+LISTA 3
+
+1. W folderze znajduje siê plik install.sh, który instlauje potrzebne modu³y, biblioteki.
+sudo ./install.sh
+
+2. Statystyki zebrane podczas testowania programów znajduj¹ siê w folderze statystyki.
+
+3. Wykresy tworzone podczas testowania programów znajduj¹ siê w folderze grafy.
+
+4. Zadanie 1
+Radix sort radzi³ sobie wolniej z danymi o du¿ej iloœci cyfr(porównanie graficzne w folderze grafy lub 
+w folderze statystyki: radix.txt, radix15-20zer.txt)
+
+wywo³anie zgodnie ze specyfikacj¹
+przyk³ad: python zad1.py --type radix --comp "<=" --stat radix_stat.txt 1
+
+W celu wyœwietlenia wykresów dla plików wytworzonych przez to zadanie(tych po --stat) nale¿y wpisaæ:
+python plotdata.py plik.txt plik2.txt ... plikn.txt
+Zalecane u¿ycie: plotdata.py plik1.txt plik2.txt 
+Jeœli chcemy same porównanie czasów: plot_time.py plik1.txt plik2.txt
+wyœwietli porównanie(wykresy) miêdzy danymi z podanych plików.
+
+5. Zadanie 2
+python zad2.py -p lub -r
+nastêpnie podajemy z klawiatury n oraz k zgodnie z zadaniem.
+
+Zadanie zosta³o tak¿e przetestowane za pomoc¹ pliku zad2test.py zgodnie ze specyfikacj¹.
+
+python zad2test.py -p lub -r
+tworzy dwa pliki ze statystykami r_select.txt oraz select.txt, dla których mo¿na przestawiæ wykresy:
+python plotdata.py r_select.txt select.txt
+
+
+6. Zadanie 3
+python zad3.py lub python zad3.py k
+k - liczba powtórzeñ losowania elementu i wyszukiwania go w posortowanej liœcie o rozmiarze size.
+Size zwiêksza siê od 1000 do 100 000 z krokiem 1000.
+Program szuka wiele razy o zbiera satystyki dla czasu wykonania, liczby porównañ.
+Na std.err wypisywany jest aktualny size w pêtli(w celu monitorowania progesu wywo³ania).
+Na koñcu do pliku binary_statistics.txt s¹ wypisane statystyki w formie tablicy:
+[ [SIZE, (max time, min time), (max comp, min comp)], ...]
+Domyœlnie bez wpisania k jako argumentu, ustawia siê ono na 1.

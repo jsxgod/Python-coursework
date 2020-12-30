@@ -1,0 +1,18 @@
+W 4 zadaniu hybryd¹ jest quicksort + insertionsort. Hybryda dzialala szybciej niz zwykly quicksort
+
+
+Przyk³adowe wywo³ania:
+
+python 1.py --type quick --comp "<="
+
+python 2.py --type insert|quick|merge --comp ">=" --stat plik.txt 10
+
+python 3.py --type dpquick --comp "<=" --stat plik.txt 1
+
+python 4.py --type hybrid --comp "<=" --stat plik.txt 100
+
+WYKRESY:
+
+python plotdata.py insertsortdane.txt
+
+python plotdata.py quicksortdane.txt mergesortdane.txt
