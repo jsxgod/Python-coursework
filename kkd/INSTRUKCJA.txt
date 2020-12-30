@@ -1,0 +1,43 @@
+W folderze znajduje siê plik install.sh, który instlauje potrzebne modu³y, biblioteki.
+sudo ./install.sh
+
+u¿ycie do zadañ:
+
+LISTA1
+python entropy.py
+Wyniki na standardowym wyjœciu.
+
+LISTA2
+python encode.py plik
+
+generuje nastêpuj¹ce pliki:
+	encoded.bin - zakodowany plik
+	decoded.txt - zdekodowany z powrotem do odkodowanego
+	tree_graph.txt - drzewo przestawiaj¹ce graficznie drzewo huffmana dla danego kodowania
+Dodatkowo na standardowym wyjœciu wyœwietlane s¹ informacje o wyniku dzia³ania programu(entropia, œrednia d³ugoœæ, kompresja)
+
+LISTA3
+!!! UWAGA NOWY SKRYPT install.sh z dodatkow¹ bibliotek¹ !!!
+przyk³ady u¿ycia:
+python lzw.py --encode inwokacja.txt
+python lzw.py --decode encoded.bin
+python lzw.py --decode encoded.bin inwokacja.txt
+
+U¿ycie --encode plik koduje podany plik, wyœwietla statystyki oraz tworzy plik encoded.bin.
+U¿ycie --decode plik odkodowuje plik i zapisuje wynik do decoded.txt
+U¿ycie --decode plik1 plik2 odkodowuje plik1 i zapisuje wynik do decoded.txt, a nastêpnie porównuje decoded.txt do plik2.txt
+
+LISTA 4
+Wydaje mi siê, ¿e nie trzeba odpalaæ skryptu install.sh.
+u¿ycie:
+python l4.py plik.tga
+
+Wyniki na standardowym wyjœciu.
+
+Lista 5
+Jak na poprzedniej liœcie, raczej nie trzeba odpalaæ skryptu install.sh
+u¿ycie:
+python l5.py plik.tga output.tga liczba_kolorów
+
+przyk³adowe u¿ycie:
+python l5.py example0.tga output2.tga 2

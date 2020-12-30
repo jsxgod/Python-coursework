@@ -1,0 +1,9 @@
+Jak na poprzednich listach nie trzeba nic instalowaæ dodatkowo.
+
+Wywo³anie programów:
+python encode.py plik_wejsciowy plik_wyjsciowy
+python decode.py plik_wejsciowy plik_wyjsciowy
+python comparator.py plik1 plik2
+
+python noise.py p plik_wejsciowy plik_wyjsciowy
+gdzie p - prawdopodobienstwo (zakres od 0 do 1, np. 0.4)
