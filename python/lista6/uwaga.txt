@@ -1,0 +1,1 @@
+python 3.8 coś nie chciał zaimportować matplotliba, także trzeba od razu ustawić project interpreter(jeśli w pycharmie) na python 3.7

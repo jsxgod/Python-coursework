@@ -1,0 +1,4 @@
+eta 0.5 sigmoid sigmoid
+eta 0.3 relu sigmoid
+eta 0.1 sigmoid relu
+eta 0.01 relu relu
